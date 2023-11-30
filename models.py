@@ -24,7 +24,6 @@ class SwapiPeople(Base):
     __tablename__ = "swapi_people"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    id_hero: Mapped[int] = mapped_column(nullable=False)
     birth_year: Mapped[str] = mapped_column()
     eye_color: Mapped[str] = mapped_column()
     films: Mapped[str] = mapped_column()
